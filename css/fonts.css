@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* 아이콘 (import는 항상 위에 위치) */ 
+@import url("https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css");
+@import url("https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css");
+
+
+/* 한글폰트 */
+@font-face {
+    font-family: 'cjonlyone';
+    src: url(/fonts/cjonlyone/CJONLYONENEWbodyLight.woff);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'cjonlyone';
+    src: url(/fonts/cjonlyone/CJONLYONENEWbodyRegular.woff);
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'cjonlyone';
+    src: url(/fonts/cjonlyone/CJONLYONENEWtitleBold.woff);
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'cjonlyone';
+    src: url(/fonts/cjonlyone/CJONLYONENEWtitleMedium.woff);
+    font-weight: 700;
+}
+
+/* 영문폰트 */
+
+
+

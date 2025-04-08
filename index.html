@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CJ푸드빌</title>
+    <!-- favicon -->
+    <link rel="icon" href="">
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- Java Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.2.6/swiper-bundle.min.js"></script>
+    <script src="/js/main.js" defer></script>
+    <!-- 
+    //- dep2 배경 하얀색으로 채우기, 만들기
+    //- 브랜드 스와이퍼 무한 재생, 끊기는거 방지
+    //- 글로벌 ul 어떻게 position?
+    //- news 스와이퍼 시 끊김
+    //- 지속 가능한 미래 이미지 태그해야만 호버 시 이미지 확대 가능?
+    -->
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">          
+                <h1><a href="#"><span class="blind">CJ푸드빌</span></a></h1>
+                <nav id="gnb">
+                    <ul class="dep1">
+                        <li>
+                            <a href="https://www.cjfoodville.co.kr/story/foodvilleintro.html">
+                                <div class="label">회사소개</div>
+                            </a>
+                            <ul class="dep2">
+                                <li><a href="https://www.cjfoodville.co.kr/story/foodvilleintro.html">기업소개</a></li>
+                                <li><a href="https://www.cjfoodville.co.kr/story/vision.asp">미션 & 비전</a></li>
+                                <li><a href="https://www.cjfoodville.co.kr/story/ceogreeting.asp">CEO인사말</a></li>
+                                <li><a href="https://www.cjfoodville.co.kr/story/history.asp">연혁</a></li>
+                                <li><a href="https://www.cjfoodville.co.kr/story/ci.asp">CI 소개</a></li>
+                                <li><a href="https://www.cjfoodville.co.kr/story/finance.asp">재무정보</a></li>
+                                <li><a href="https://www.cjfoodville.co.kr/story/map.asp">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://www.cjfoodville.co.kr/brand/brandintro.asp">
+                                <div class="label">브랜드</div>
+                            </a>
+                            <ul class="dep2">
+                                <li><a href="https://www.cjfoodville.co.kr/brand/brandintro.asp">브랜드 소개</a></li>
+                                <li><a href="https://www.cjfoodville.co.kr/brand/globalfoodville_tlj.asp">세계 속의 푸드빌</a></li>
+                                <li><a href="https://www.cjfoodville.co.kr/brand/foundinginfo.asp">창업안내</a></li>
+                                <li><a href="https://www.cjfoodville.co.kr/brand/foundingpropose.asp">입지제안</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://www.cjfoodville.co.kr/share/esg_system.asp">
+                                <div class="label">지속가능경영</div>
+                            </a>
+                            <ul class="dep2">
+                                <li><a href="https://www.cjfoodville.co.kr/share/esg_system.asp">지속가능경영체계</a></li>
+                                <li><a href="https://www.cjfoodville.co.kr/share/ceomessage.asp">윤리경영</a></li>
+                                <li><a href="https://www.cjfoodville.co.kr/share/domestic.asp">상생/나눔경영</a></li>
+                                <li><a href="https://www.cjfoodville.co.kr/share/safetypolicy.asp">안전경영</a></li>
+                                <li><a href="https://www.cjfoodville.co.kr/share/hrs_system.asp">인권경영</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://www.cjfoodville.co.kr/footer/qna.asp">
+                                <div class="label">고객서비스</div>
+                            </a>
+                            <ul class="dep2">
+                                <li><a href="https://www.cjfoodville.co.kr/CJFVSite/login.asp">로그인</a></li>
+                                <li><a href="https://www.cjfoodville.co.kr/membership/membershipguide.asp">멤버십 안내</a></li>
+                                <li><a href="https://www.cjfoodville.co.kr/footer/qna.asp">문의하기</a></li>
+                                <li><a href="https://www.cjfoodville.co.kr/footer/ethic_center.asp">사이버감사실</a></li>
+                                <li><a href="https://www.cjfoodville.co.kr/footer/sitemap.asp">사이트맵</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://www.cjfoodville.co.kr/campaign/PR_List.asp">
+                                <div class="label">뉴스룸</div>
+                            </a>
+                            <ul class="dep2">
+                                <li><a href="https://www.cjfoodville.co.kr/campaign/PR_List.asp">보도자료</a></li>
+                                <li><a href="https://www.cjfoodville.co.kr/campaign/esg.asp">ESG이야기</a></li>
+                                <li><a href="https://www.cjfoodville.co.kr/campaign/PR_List_notice.asp">공지사항</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://www.cjfoodville.co.kr/recruit/job_introduction.asp">
+                                <div class="label">채용</div>
+                            </a>
+                            <ul class="dep2">
+                                <li><a href="https://www.cjfoodville.co.kr/recruit/job_introduction.asp">직무소개</a></li>
+                                <li><a href="https://www.cjfoodville.co.kr/recruit/apply_simple.asp">간편 지원하기</a></li>
+                                <li><a href="https://www.cjfoodville.co.kr/recruit/faq.asp">FAQ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header_util">
+                    <div class="lang_wrap">
+                        <button>KR<i class="ri-arrow-down-s-fill"></i></button>
+                        <ul>
+                            <li><a href="">KR</a></li>
+                            <li><a href="">EN</a></li>
+                        </ul>
+                    </div>
+                    <div class="search_wrap">
+                        <button>
+                            <i class="ri-search-line"></i>
+                            <span class="blind">검색창열기</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="search_box">
+                    <div class="search_form">
+                        <h2><span class="st_color">푸드빌</span>에 대해 물어보세요 <span class="st_color">!</span></h2>
+                        <div class="search_form2">
+                            <form>
+                                <input type="text" placeholder="검색어를 입력하세요.">
+                                <button type="submit">
+                                    <i class="ri-search-line"></i>
+                                    <span class="blind">검색하기</span>
+                                </button>
+                            </form>
+                            <button>
+                                <i class="ri-close-large-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+        </header>
+        <main>
+            <div class="main_visual">
+                <div class="swiper-main">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="/img/main/main_visual01.jpg" alt="">
+                            <strong>모두에게 행복이 넘치는 곳</strong>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/img/main/main_visual02.jpg" alt="">
+                            <strong>건강한 맛, 행복한 서비스</strong>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/img/main/main_visual03.jpg" alt="">
+                            <strong>전 세계를 감동시킬 푸드빌의 맛과 멋</strong>
+                        </div>
+                    </div> 
+                    <div class="swiper_content">
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <button class="button_gotop"><i class="ri-arrow-up-line"></i></button>
+            </div>
+        </main>
+    </div>
+    
+    <section class="brands_wrap">        
+        <div class="container">
+            <hgroup class="section_text">
+                <h2 class="section_h2"><span class="blue">CJ 푸드빌</span>을 소개합니다<span class="blue">.</span></h2>
+                <p class="section_p"><span class="red">차별화된 식문화</span>, 다양한 브랜드를 통해 선보입니다</p>
+            </hgroup>
+            <div class="swiper_brands">
+                <ul class="swiper-wrapper">
+                    <a class="swiper-slide" href="https://www.ivips.co.kr/intro/250320/intro.asp"target="_blank">
+                        <span class="logo_brand s1"> <!-- 백그라운드 이미지 -->
+                            <img src="/img/logo/vips_logo.png" alt="빕스">
+                        </span>
+                        <div class="brand_img">
+                            <!--마우스오버 배경 / opacity: 0-->
+                            <!-- 텍스트: 브랜드 이름, 설명 -->
+                            <div class="brand_tb">
+                                <p class="name">빕스</p>
+                                <p class="explain">프리미엄 스테이크 <br>& 시즈널 샐러드바</p>
+                            </div>
+                            <button><i class="ri-add-line"></i></button>
+                        </div>
+                    </a>
+                    <a class="swiper-slide" href="https://www.tlj.co.kr/index.asp"target="_blank">
+                        <span class="logo_brand s2">
+                            <img src="/img/logo/tousles_logo.png" alt="뚜레쥬르">
+                        </span>
+                        <div class="brand_img">
+                            <div class="brand_tb">
+                                <p class="name">뚜레쥬르</p>
+                                <p class="explain">건강한 데일리 베이커리</p>
+                            </div>
+                            <button><i class="ri-add-line"></i></button>
+                        </div>
+                    </a>
+                    <a class="swiper-slide" href="https://www.italiantheplace.co.kr:7022/theplace_end.asp"target="_blank">
+                        <span class="logo_brand s3">
+                            <img src="/img/logo/logo_new.png" alt="더플레이스">
+                        </span>
+                        <div class="brand_img">
+                            <div class="brand_tb">
+                                <p class="name">더 플레이스</p>
+                                <p class="explain">이탈리안 비스트로</p>
+                            </div>
+                            <button><i class="ri-add-line"></i></button>
+                        </div>
+                    </a>
+                    <a class="swiper-slide" href="https://www.cheiljemyunso.co.kr:7014/the_end.asp"target="_blank">
+                        <span class="logo_brand s4">
+                            <img src="/img/logo/jeil_logo.png" alt="제일제면소">
+                        </span>
+                        <div class="brand_img">
+                            <div class="brand_tb">
+                                <p class="name">제일제면소</p>
+                                <p class="explain">제철 국수와 한식 일품요리</p>
+                            </div>
+                            <button><i class="ri-add-line"></i></button>
+                        </div>
+                    </a>
+                    <a class="swiper-slide" href="https://www.cjfoodville.co.kr/brand/brandintro.asp#"target="_blank">
+                        <span class="logo_brand s5">
+                            <img src="/img/logo/thesteakhouse_logo.png" alt="더스테이크하우스">
+                        </span>
+                        <div class="brand_img">
+                            <div class="brand_tb">
+                                <p class="name">더 스테이크 하우스</p>
+                                <p class="explain">뉴욕식 정통 스테이크하우스</p>
+                            </div>
+                            <button><i class="ri-add-line"></i></button>
+                        </div>
+                    </a>
+                    <a class="swiper-slide" href="https://www.nseoultower.co.kr/"target="_blank">
+                        <span class="logo_brand s6">
+                            <img src="/img/logo/nseoultower_logo.png" alt="n서울타워">
+                        </span>
+                        <div class="brand_img">
+                            <div class="brand_tb">
+                                <p class="name">N 서울타워</p>
+                                <p class="explain">서울의 대표 랜드마크</p>
+                            </div>
+                            <button><i class="ri-add-line"></i></button>
+                        </div>
+                    </a>
+                    <a class="swiper-slide" href="https://www.nseoultower.co.kr/visit/restaurant.asp"target="_blank">
+                        <span class="logo_brand s7">
+                            <img src="/img/logo/ngrill_logo.png" alt="엔그릴">
+                        </span>
+                        <div class="brand_img">
+                            <div class="brand_tb">
+                                <p class="name">엔그릴</p>
+                                <p class="explain">360도 회전 전망으로 즐기는 <br>프렌치 코스</p>
+                            </div>
+                            <button><i class="ri-add-line"></i></button>
+                        </div>
+                    </a>
+                    <a class="swiper-slide" href="https://www.nseoultower.co.kr/visit/restaurant2.asp"target="_blank">
+                        <span class="logo_brand s8">
+                            <img src="/img/logo/hancook_logo.png" alt="한쿡">
+                        </span>
+                        <div class="brand_img">
+                           <div class="brand_tb">
+                             <p class="name">한쿡</p>
+                             <p class="explain">남산 꼭대기에서 즐기는<br> 모던 한우 그릴</p>
+                           </div>
+                            <button><i class="ri-add-line"></i></button>
+                        </div>
+                    </a>
+                </ul>
+            </div>
+            <div class="brand_more">
+                <a href="https://www.cjfoodville.co.kr/brand/brandintro.asp" class="main_link" target="_blank">브랜드 자세히 보기</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="global_wrap">
+        <hgroup class="section_text">
+            <h2 class="section_h2">세계 속의 <span>푸드빌.</span></h2>
+            <p>국내를 넘어 <span>세계인의 입맛</span>을 사로잡습니다</p>
+        </hgroup>
+        <div class="global_container">
+            <div class="global_img">
+                <div class="img_wrap">
+                    <img src="/img/main/worldmap.png" alt="">
+                </div>
+                <ul class="nation">
+                    <li class="canada"><!--포지션: 국기 기준으로, 지도 위치에 맞춰-->
+                        <img src="/img/main/location.png" alt="캐나다">
+                        <div class="country_box"><!--dislay : none, 마우스오버 block => 국기위치에 맞춰 포지션-->
+                            <div class="country_img">
+                                <img src="/img/main/store/canadas.jpg" alt="매장사진">
+                            </div>
+                            <div class="store_text">
+                                <div class="store_name">
+                                    <strong>캐나다 캘거리 1호점</strong>
+                                    <a href="#" target="_blank">
+                                        <i class="ri-instagram-line"></i>
+                                    </a>
+                                </div>
+                                <p class="store_explain">향후 밴쿠버, 토론토 등 주요 거점 오픈 예정</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="usa">
+                        <img src="/img/main/location.png" alt="미국">
+                        <div class="country_box">
+                            <div class="country_img">
+                                <img src="/img/main/usass.jpg" alt="매장사진">
+                            </div>
+                            <div class="store_text">
+                                <div class="store_name">
+                                    <strong>미국 버지니아 챈틸리점</strong>
+                                    <a href="#" target="_blank">
+                                        <i class="ri-instagram-line"></i>
+                                    </a>
+                                </div>
+                                <p class="store_explain">현 매장 수 150개, 향후 1000개 매장 확대 계획</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mongol">
+                        <img src="/img/main/location.png" alt="몽골">
+                        <div class="country_box">
+                            <div class="country_img">
+                                <img src="/img/main/store/mongols.jpg" alt="매장사진">
+                            </div>
+                            <div class="store_text">
+                                <div class="store_name">
+                                    <strong>몽골 울란바토르점</strong>
+                                    <a href="#" target="_blank">
+                                        <i class="ri-instagram-line"></i>
+                                    </a>
+                                </div>
+                                <p class="store_explain">20여개 매장, 한국 스타일의 빵과 디저트 제공</p>
+                            </div>                     
+                        </div>                       
+                    </li>
+                    <li class="china">
+                        <img src="/img/main/location.png" alt="중국">
+                        <div class="country_box">
+                            <div class="country_img">
+                                <img src="/img/main/store/chinas.jpg" alt="매장사진">
+                           </div>
+                            <div class="store_text">
+                               <div class="store_name">
+                                 <strong>중국 브랑제리 & 비스트로</strong>
+                                 <a href="#" target="_blank">
+                                     <i class="ri-instagram-line"></i>
+                                 </a>
+                               </div>
+                                <p class="store_explain">브랑제리 & 비스트로, 프리미엄 베이커리 도약</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="vietnam">
+                        <img src="/img/main/location.png" alt="베트남">
+                        <div class="country_box">
+                            <div class="country_img">
+                                <img src="/img/main/store/vietnams.jpg" alt="매장사진">
+                            </div>
+                            <div class="store_text">
+                                <div class="store_name">
+                                    <strong>베트남 하노이점</strong>
+                                    <a href="#" target="_blank">
+                                        <i class="ri-instagram-line"></i>
+                                    </a>
+                                </div>
+                                <p class="store_explain">카페형 베이커리, K-베이커리 문화 전파</p>
+                            </div>        
+                        </div>
+                    </li>
+                    <li class="cambodia">
+                        <img src="/img/main/location.png" alt="캄보디아">
+                        <div class="country_box">
+                            <div class="country_img">
+                                <img src="/img/main/store/cambodias.jpg" alt="매장사진">
+                            </div>
+                            <div class="store_text">
+                                <div class="store_name">
+                                    <strong>캄보디아 캠푸치아크롬점</strong>
+                                    <a href="#" target="_blank">
+                                        <i class="ri-instagram-line"></i>
+                                    </a> 
+                                </div>
+                                <p class="store_explain">No.1 베이커리 목표, 연내 5개 매장 오픈 계획</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="maleysia">
+                        <img src="/img/main/location.png" alt="말레이시아">
+                        <div class="country_box">
+                            <div class="country_img">
+                                <img src="/img/main/store/maleysias.jpg" alt="매장사진">
+                            </div>
+                            <div class="store_text">
+                                <div class="store_name">
+                                    <strong>말레이시아 현지 계약 체결</strong>
+                                    <a href="#" target="_blank">
+                                        <i class="ri-instagram-line"></i>
+                                    </a>
+                                </div>
+                                <p class="store_explain">상반기 내 1호점 오픈 예정</p>
+                            </div>      
+                        </div>
+                    </li>
+                    <li class="singapor">
+                        <img src="/img/main/location.png" alt="싱가포르">
+                        <div class="country_box">
+                            <div class="country_img">
+                                <img src="/img/main/store/singapors.jpg" alt="매장사진">
+                            </div>
+                            <div class="store_text">
+                                <div class="store_name">
+                                    <strong>싱가포르 1호점</strong>
+                                    <a href="#" target="_blank">
+                                        <i class="ri-instagram-line"></i>
+                                    </a>
+                                </div>
+                                <p class="store_explain">다문화 국가에 알맞는 다양한 빵, 디저트 제공</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="indonesia">
+                        <img src="/img/main/location.png" alt="인도네시아">
+                        <div class="country_box">
+                            <div class="country_img">
+                                <img src="/img/main/store/indonesia_s.png" alt="매장사진">
+                            </div>
+                            <div class="store_text">
+                                <div class="store_name">
+                                    <strong>인도네시아 반둥 파스칼몰점</strong>
+                                    <a href="#" target="_blank">
+                                        <i class="ri-instagram-line"></i>
+                                    </a>
+                                </div>
+                                <p class="store_explain">70개 이상 매장, 베이커리 선두 자리매김</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul> 
+                <p class="tous_p">대표 브랜드 <span>"뚜레쥬르"</span> 글로벌 현황</p>
+            </div>
+        </div>
+        <div class="button_more">
+            <a href="https://www.cjfoodville.co.kr/brand/globalfoodville_tlj.asp" class="main_link" target="_blank">자세히 보기</a>
+        </div>
+    </section>
+
+    <section class="news_wrap">
+        <hgroup class="section_text">
+            <h2 class="section_h2"><span>푸드빌</span> 이야기<span>.</span></h2>
+            <p>CJ 푸드빌의 <span>새로운 소식</span>과 <span>즐거운 이야기</span>를 전합니다</p> 
+        </hgroup>
+        <div class="news_contents">
+            <div class="news_swiper">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide"><a href="https://www.cjfoodville.co.kr/campaign/esg.asp" target="_blank">
+                        <div class="thumb_img">
+                            <img src="/img/main/esgnews.jpg" alt="">
+                        </div>
+                        <span class="news_cate">ESG 이야기</span>
+                        <div class="news_text">
+                            <p>CJ 푸드빌, 협력업체 대상 ‘식품 안정 세미나’ 개최</p>
+                            <span class="date">25.03.17</span>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="swiper-slide"><a href="https://www.cjfoodville.co.kr/campaign/PR_View.asp" target="_blank">
+                        <div class="thumb_img">
+                            <img src="/img/main/breadposter.jpg" alt="">
+                        </div>
+                        <span class="news_cate">보도자료</span>
+                        <div class="news_text">
+                            <p>‘식빵 맛집’ 뚜레쥬르, 흑미로운 찹쌀식빵 출시</p>
+                            <span class="date">25.03.12</span>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="swiper-slide"><a href="https://www.cjfoodville.co.kr/campaign/PR_View.asp" target="_blank">
+                        <div class="thumb_img">
+                            <img src="/img/main/winefair.jpg" alt="">
+                        </div>
+                        <span class="news_cate">보도자료</span>
+                        <div class="news_text">
+                            <p>CJ 푸드빌 N서울타워, ‘2025 봄 남산 와인페어’ 개최</p>
+                            <span class="date">25.03.24</span>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="swiper-slide"><a href="https://www.cjfoodville.co.kr/campaign/PR_View.asp" target="_blank">
+                        <div class="thumb_img">
+                            <img src="/img/main/supertable.jpg" alt="">
+                        </div>
+                        <span class="news_cate">보도자료</span>
+                        <div class="news_text">
+                            <p>CJ 푸드빌 빕스, ‘슈퍼테이블’ 콘셉트 봄 신메뉴 출시</p>
+                            <span class="date">25.03.20</span>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="swiper-slide"><a href="https://www.cjfoodville.co.kr/campaign/esg.asp" target="_blank">
+                        <div class="thumb_img">
+                            <img src="/img/main/isms.jpg" alt="">
+                        </div>
+                        <span class="news_cate">ESG 이야기</span>
+                        <div class="news_text">
+                            <p>CJ 푸드빌, ISMS-P 인증 획득</p>
+                            <span class="date">25.03.10</span>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="swiper-slide"><a href="https://www.cjfoodville.co.kr/campaign/PR_View.asp" target="_blank">
+                        <div class="thumb_img">
+                            <img src="/img/main/nuruk.jpg" alt="">
+                        </div>
+                        <span class="news_cate">보도자료</span>
+                        <div class="news_text">
+                            <p>CJ 푸드빌, 을지로에 '파일럿 스토어' 오픈... 임직원 아이디어로 채워가는 무한한 가능성의 공간</p>
+                            <span class="date">25.03.31</span>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="swiper-slide"><a href="https://www.cjfoodville.co.kr/campaign/esg.asp" target="_blank">
+                        <div class="thumb_img">
+                            <img src="/img/main/cofee.png" alt="">
+                        </div>
+                        <span class="news_cate">ESG 이야기</span>
+                        <div class="news_text">
+                            <p>뚜레쥬르, 美 전 매장에 바이오 소재 'PHA' 빨대 도입</p>
+                            <span class="date">25.03.05</span>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="swiper-slide"><a href="https://www.cjfoodville.co.kr/campaign/esg.asp" target="_blank">
+                        <div class="thumb_img">
+                            <img src="/img/main/awards.jpg" alt="">
+                        </div>
+                        <span class="news_cate">ESG 이야기</span>
+                        <div class="news_text">
+                            <p>뚜레쥬르 2024년 비즈니스 CSR 최우수 기업 수상</p>
+                            <span class="date">24.04.28</span>
+                        </div>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="news_more">
+            <a href="https://www.cjfoodville.co.kr/campaign/PR_List.asp" class="main_link" target="_blank">새로운 소식 더 보기</a>
+        </div>
+    </section>
+    <section class="sustainable_wrap">
+        <div class="container">
+            <hgroup class="section_text">
+                <h2 class="section_h2"><span>지속 가능</span>한 미래<span>.</span></h2>
+                <p>CJ 푸드빌은 오늘보다 더 나은, <span>지속 가능한 내일</span>을 만들어 나갑니다</p> 
+            </hgroup class="section_text">
+            <div class="grid_box">
+                <a class="a" href="https://www.cjfoodville.co.kr/share/ceomessage.asp">
+                    <img src="/img/main/walking_bg.jpg" alt="">
+                    <div style="position: absolute;">
+                        <span>윤리경영</span>
+                        <p>CJ人의 약속, 반듯한 윤리경영</p>
+                    </div>
+                </a>
+                <a class="b" href="https://www.cjfoodville.co.kr/share/domestic.asp">
+                    <img src="/img/main/sprout_bg.jpg" alt="">
+                   <div style="position: absolute;">
+                     <span>상생/나눔경영</span>
+                     <p>지속가능한 동반성장 가치 창출</p>
+                   </div>
+                </a>
+                <a class="c" href="https://www.cjfoodville.co.kr/share/esg_system.asp">
+                    <img src="/img/main/flower_bg.jpg" alt="">
+                    <div style="position: absolute;">
+                        <span>지속가능경영체계</span>
+                        <p>‘우리’와 ‘지구’의 더 나은 ‘내일’을 위한 경영</p>
+                    </div>
+                </a>
+                <a class="d" href="https://www.cjfoodville.co.kr/share/safetypolicy.asp">
+                    <img src="/img/main/dsafety_bg.png" alt="">
+                    <div style="position: absolute;">
+                        <span>안전경영</span>
+                        <p>고객, 임직원의 안전을 최우선 하는 안전문화 </p>
+                    </div>
+                </a>
+                <a class="e" href="https://www.cjfoodville.co.kr/share/hrs_system.asp">
+                    <img src="/img/main/handclap_bg.jpg" alt="">
+                    <div style="position: absolute;">
+                        <span>인권경영</span>
+                        <p>모두가 존중, 보호 받기 위한 노력</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="startup_wrap">
+        <hgroup class="section_text">
+            <h2 class="section_h2"><span>창업</span> 안내<span>.</span></h2>
+            <p><span>성공적인 창업</span>을 위한 파트너로서, 차별화된 지원과 경쟁력 있는 서비스를 제공합니다</p>
+        </hgroup>
+        <div class="startup_contents">
+            <div class="s_text">
+                <h3 class="char"><span class="grey">신선함이 가득한 베이커리</span> <br> 뚜레쥬르</h3>
+                <p>뚜레쥬르는 고객과 가맹점주님들의 만족을 최고의 가치로 생각하며 <br> 성공적인 창업을 위한 파트너로서 차별화된 지원과 경쟁력 있는 서비스로 <br> <span class="blue">창업의 길잡이</span>가 되어 드리겠습니다.</p>
+            </div>
+            <img src="/img/main/startup_tous.jpg" alt="">
+        </div>
+        <div class="with_tous">
+            <a href="https://www.tlj.co.kr/franchise/preparation/contactUs.asp" class="main_link" target="_blank">뚜레쥬르와 함께하기</a>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer_links">
+            <div class="menu_container">
+                <ul class="footer_menu">
+                    <li><a href="https://www.cjfoodville.co.kr/footer/userpolicy.asp">이용약관</a></li>
+                    <li><a href="https://www.cjfoodville.co.kr/footer/location.asp">위치기반서비스 이용약관</a></li>
+                    <li><a href="https://www.cjfoodville.co.kr/footer/privacy.asp"><span>개인정보처리방침</span></a></li>
+                    <li><a href="https://www.cjfoodville.co.kr/footer/media_policy.asp">영상정보처리기기 운영관리방침</a></li>
+                    <li><a href="https://www.cjfoodville.co.kr/footer/emailpolicy.asp">이메일무단수집거부</a></li>
+                    <li><a href="https://www.cjfoodville.co.kr/footer/legalnotice.asp">법적고지</a></li>
+                </ul>
+                <div class="family_site">
+                    <button>FAMILY SITES<i class="ri-add-line"></i></button>
+                    <ul>
+                        <!-- CJ그룹 -->
+                        <li><a href="https://www.cj.net/" target="_blank">CJ주식회사</a></li>
+                        <!-- 식품 & 식품서비스 -->
+                        <li><a href="https://www.cj.co.kr/kr/about/business/cjfeedncare" target="_blank">CJ제일제당</a></li>
+                        <li><a href="https://www.cjfoodville.co.kr/main.asp" target="_blank">CJ푸드빌</a></li>
+                        <li><a href="https://www.cjfreshway.com/index.jsp" target="_blank">CJ프레시웨이</a></li>
+                        <!-- 생명공학 -->
+                        <li><a href="https://cjbio.net/ko/" target="_blank">CJ제일제당 BIO사업부문</a></li>
+                        <!-- 물류 & 신유통 -->
+                        <li><a href="https://www.cjlogistics.com/ko/main" target="_blank">CJ대한통운</a></li>
+                        <li><a href="https://www.cjenc.co.kr/kr/Default.asp" target="_blank">CJ대한통운 건설부문</a></li>
+                        <li><a href="https://corp.oliveyoung.com/ko" target="_blank">CJ올리브영</a></li>
+                        <li><a href="https://www.cjolivenetworks.co.kr/" target="_blank">CJ올리브 네트웍스</a></li>
+                        <li><a href="https://company.cjonstyle.com/index.asp" target="_blank">CJ ENM 커머스부문</a></li>
+                        <!-- 엔터테인먼트 & 미디어 -->
+                        <li><a href="https://www.cjenm.com/ko/" target="_blank">CJ ENM 엔터테인먼트부문</a></li>
+                        <li><a href="http://corp.cgv.co.kr/" target="_blank">CJ CGV</a></li>
+                        <li><a href="https://www.tving.com/onboarding" target="_blank">TVING</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="company_info">
+            <div class="info_container">
+                <img src="/img/logo/footer_logo.png" alt="">
+                <div class="company_text">
+                    (우)04555 서울시 중구 마른내로34 (초동 106-9번지) KT&G 을지로타워 3, 9-11층 CJ푸드빌(주) | 대표이사: 김찬호 <br>
+                    고객센터: 1577-0700 | 팩스: 02-6740-4349 | 사업자등록번호: 312-81-42519 | 개인정보보호책임자: 김재완 <br>
+                    대표이메일: help_master@cj.net <br>
+                    <span>Copyright 2015 &copy; CJ Foodville, All rights reserved.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
