@@ -96,18 +96,18 @@ header h1 a {
     display: block;
     width: 15rem;
     height: 7rem;
-    background: url(/img/logo/hlogo_white.png) no-repeat;
+    background: url(../img/logo/hlogo_white.png) no-repeat;
     background-position: left top;
     background-size: 100% auto;
     transition: all .3s;
 }
 header:hover h1>a {
-    background: url(/img/logo/hlogo_black.png) no-repeat;
+    background: url(../img/logo/hlogo_black.png) no-repeat;
     background-position: left top;
     background-size: 100% auto;
 }
 header.scroll h1 a {
-    background: url(/img/logo/hlogo_black.png) no-repeat;
+    background: url(../img/logo/hlogo_black.png) no-repeat;
     background-position: left top;
     background-size: 100% auto;
 }
@@ -482,42 +482,42 @@ header .search_box {
    
 }
 .swiper_brands .s1  {
-    background: url(/img/main/vips_bg.jpg);
+    background: url(../img/main/vips_bg.jpg);
     background-size: cover;
     background-position: center;
 }
 .swiper_brands .s2  {
-    background: url(/img/main/tousles_bg.jpg);
+    background: url(../img/main/tousles_bg.jpg);
     background-size: cover;
     background-position: center;
 }
 .swiper_brands .s3  {
-    background: url(/img/main/theplace_bg.png);
+    background: url(../img/main/theplace_bg.png);
     background-size: cover;
     background-position: center;
 }
 .swiper_brands .s4  {
-    background: url(/img/main/jeil_bg.jpg);
+    background: url(../img/main/jeil_bg.jpg);
     background-size: cover;
     background-position: center;
 }
 .swiper_brands .s5  {
-    background: url(/img/main/thesteakhouse_bg.jpg);
+    background: url(../img/main/thesteakhouse_bg.jpg);
     background-size: cover;
     background-position: center;
 }
 .swiper_brands .s6  {
-    background: url(/img/main/nseoultower.jpg);
+    background: url(../img/main/nseoultower.jpg);
     background-size: cover;
     background-position: center;
 }
 .swiper_brands .s7  {
-    background: url(/img/main/ngrill_bg.jpg);
+    background: url(../img/main/ngrill_bg.jpg);
     background-size: cover;
     background-position: center;
 }
 .swiper_brands .s8  {
-    background: url(/img/main/hancook_bg.jpg);
+    background: url(../img/main/hancook_bg.jpg);
     background-size: cover;
     background-position: center;
 }
