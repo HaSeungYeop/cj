@@ -152,10 +152,11 @@ header.scroll h1 a {
     transition: all .3s;
 }
 /* label */
-/* #gnb .dep1 .label {
+#gnb .dep1 .label {
     font-size: 1.8rem;
     position: relative;
 }
+/*
 #gnb .dep1 .label::after {
     transition: all 500ms cubic-bezier(0.33, 1, 0.68, 1);
     width: .6rem;
@@ -352,7 +353,8 @@ header .search_box {
 }
 .main_visual {
     position: relative;
-    
+    height: 100vh;
+    overflow: hidden;
 }
 .main_visual .swiper-main {
     overflow: hidden;
@@ -379,7 +381,6 @@ header .search_box {
     flex-direction: column;
     color: #FFF;
     background: #000;
-    
 }
 .swiper-main .swiper-slide strong {
     position: absolute;
@@ -398,17 +399,17 @@ header .search_box {
     justify-content: center;
     gap: 2rem;
     width: 100%;
-    bottom: 7rem;
-    z-index: 10;
 }
 .swiper-main .swiper-pagination {
-    position: static;
     width: auto;
     color: #FFF;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2.4rem;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .swiper-main .swiper-pagination .num {
     font-family: 'cjonlyone';
